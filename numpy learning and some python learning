@@ -1,0 +1,46 @@
+numpy.where(condition,x,y)
+# 条件对则x,反之y
+
+numpy.dot()
+#点积，矩阵乘法
+
+zip(x,y)
+#打包为一个元组，返回一个迭代器
+a=[1,2,3]
+b=[4,5,6]
+c=zip(a,b)
+list(c)
+[(1, 4), (2, 5), (3, 6)]
+
+#导入自己写的包
+从juptyer 中转换为py文件，然后存入lib 中
+
+np.meshgrid(arange(0,1,0.01))
+#将坐标向量转为坐标矩阵，从而用于绘图坐标
+
+
+class matplotlib.colors.ListedColormap（colors，name ='from_list'，N = None ）
+#从颜色列表生成colormap对象
+
+
+#meshgrid函数将两个输入的数组x和y进行扩展，前一个的扩展与后一个有关，后一个的扩展与前一个有关，
+前一个是竖向扩展，后一个是横向扩展。因为，y的大小为2，所以x竖向扩展为原来的两倍，而x的大小为3，
+所以y横向扩展为原来的3倍。通过meshgrid函数之后，输入由原来的数组变成了一个矩阵
+x,y均为一维数组
+np.meshgrid(x,y)
+#产生一个2*2的网格其中的9个坐标点，如果sparse=True,则只产生网格对角格点
+#可用于绘点上色，区分不同的类空间
+    nx,ny = (3,3)
+    #从0开始到1结束，返回一个numpy数组,nx代表数组中元素的个数
+    x = np.linspace(0,2,nx)
+    # [0. 1. 2.]
+    y = np.linspace(0,2,ny)
+    # [0. 1. 2.]
+    xv,yv = np.meshgrid(x,y)
+    print(xv.ravel())
+    #[ 0.  1.  2.  0.  1.  2.  0.  1.  2.]
+    print(yv.ravel())
+    #[ 0.  0.  0.  1.  1.  1.  2.  2.  2.]
+    
+    https://blog.csdn.net/m0_37611893/article/details/80462592
+
