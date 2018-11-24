@@ -43,4 +43,7 @@ np.meshgrid(x,y)
     #[ 0.  0.  0.  1.  1.  1.  2.  2.  2.]
     
     https://blog.csdn.net/m0_37611893/article/details/80462592
+    
+    有关plt.contourf(x,y,z,cmap)与contour
+    x,y是一维数列，需要经过 np.meshgrid 转换为网格数据
 
