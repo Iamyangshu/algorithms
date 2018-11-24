@@ -1,8 +1,13 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[2]:
+
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import Perceptron as per
-#前提是将Perceptron添加做了库
 from matplotlib.colors import ListedColormap
 from matplotlib.font_manager import FontProperties
 font=FontProperties(fname=r'C:\Windows\Fonts\simkai.ttf',size=14)
@@ -20,7 +25,7 @@ y=np.where(dfy=='Iris-setosa',1,-1)
 #plt.legend(loc='upper left')
 #plt.show()
 #训练感知器
-ppn=per.Perceptron(neta=0.1,n_iter=10)
+ppn=per.Perceptron(eta=0.1,n_iter=10)
 ppn.fit(X,y)
 
 
@@ -72,9 +77,5 @@ plt.ylabel('特征2 ',fontproperties=font)
 plt.legend(loc='upper right')
 plt.title('感知器分类实例',fontproperties=font)
 plt.show()
-
-
-
-
 
 
